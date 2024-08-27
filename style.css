@@ -1,0 +1,644 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #323232;
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Chrome, Safari, and other WebKit browsers */
+}
+
+.navbar-custom{
+    background-color: #ddca24 !important;
+}
+.navbar-nav{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 60vw;
+    margin-left: 30vw;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3vmax;
+    font-weight: 600;
+}
+
+
+.navbar-brand img{
+    height: 8vh;
+    width: auto;
+}
+
+
+.bossbg{
+    background-image: url(assets/chirusir1.png);
+    background-size: cover;
+    width: auto;
+    height: calc(100vh - 60px);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.color{
+    background-color: rgba(0, 0, 0, 0.7);
+    height: calc(100vh - 60px);;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.homeinfo{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    width: 50%;
+    padding: 2vmax;
+    margin-top: 20vh;
+}
+.homeinfo h3{
+    text-shadow: 4px 4px black;
+    font-size: 4vmax;
+    margin: 0;
+}
+ .homeinfo p{    
+    font-family: "Poppins", sans-serif;
+    font-size: 2vmax;
+    line-height: 1;
+    margin: 0;
+    
+ }
+ .buttons{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 8px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4vmax;
+    font-weight: 600;
+    background-color: #ddca24;
+    transition: transform 1.5s;
+    margin-top: 1.2vw;
+   
+ }
+ .buttons:hover{
+    box-shadow: 3px 3px 10px #ddca24;
+    transform: scale(1.1);
+
+ }
+ .buttons a{
+    text-decoration: none;
+    color: #212121;
+ }
+/* responsivness for home*/
+@media only screen and (max-width: 600px){
+    .color{
+        justify-content: flex-start;
+        
+    }
+    .homeinfo{
+        margin-top: 15vh;
+        width: 70%;
+    }
+    .bossbg{
+        background-image: url(assets/chirusir1p.png);
+    }
+}
+ 
+ .about-bg{
+    background-color: #212121;
+    width: 97%;
+    margin: 2vh auto;
+    border-radius: 10px;
+    padding: 1rem;
+ } 
+ .aboutinfo-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.aboutinfo-head img{
+    height: 4vmax;
+    width: auto;
+
+}
+.aboutinfo-head h2{
+    font-family: "Roboto", sans-serif;
+    color: #ddca24;
+    text-decoration: underline;
+    font-size: 4vmax;
+    font-weight: 600;
+}
+.aboutcontent{
+    padding: 1vmax;
+    display: flex;
+    flex-direction: row;
+}
+.content{
+    display: flex;
+    height: auto;
+    width: 45%;
+    font-size: 1.2vmax;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255);
+    padding: 0.8rem;
+    margin: 5vh auto;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.content:hover{
+    box-shadow: 4px 4px 20px #ddca24;
+}
+.content p{
+   opacity: 0.9;
+}
+.content p:hover{
+    opacity: 1;
+}
+
+.gym-icons{
+    align-self: center;
+    width: 40%;
+}
+.gym-icons img{
+    height: 15vmax;
+}
+
+
+.t-button{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+}
+
+.t-button button{
+    padding: 6px;
+    background-color: #ddca24;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 1.2vmax;
+    font-weight: 600;
+}
+  
+  /*rsponsiveness for about*/
+ 
+@media only screen and (max-width: 600px) {
+    .aboutcontent{
+        flex-direction: column;
+    }
+    .content{
+        height: 28vh;
+        width: 80%;
+        margin: 4vh auto;
+    }
+}
+
+
+.trainer-info-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    padding-bottom: 0px;
+}
+
+.trainer-info-head img{
+    height: 4vmax;
+
+}
+.trainer-info-head h2{
+    font-family: "Roboto", sans-serif;
+    color: #ddca24;
+    text-decoration: underline;
+    font-size: 4vmax;
+    font-weight: 600;
+}
+.trainer-cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    
+}
+
+.card {
+    height: auto;
+    width: 45vw;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2vmax;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 2.5vh;
+    opacity: 0.9;
+    box-shadow: 3px 3px 15px black;
+    cursor: pointer;
+    transition: transform 1.5s ease;
+}
+
+.card p,h3{
+    margin: 0px;
+    line-height: 1.5;
+}
+.card h3{
+    font-size: 1.3vmax;
+    font-weight: 800;
+}
+
+.t-img img{
+    height: 15vmax;
+    border-radius: 8px;
+
+}
+.tinfo{
+    padding: 6px;
+    line-height: 1;
+}
+
+.card a{
+    text-decoration: none;
+}
+.card:hover{
+    opacity: 1;
+    box-shadow: 4px 4px 15px #ddca24;
+    transform: scale(1.1);
+
+}
+.sucess-stories{
+    display: flex;
+    justify-content: center;
+    padding: 1.7rem;
+}
+.sucess-stories button{
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ddca24;
+    transition: transform 1.5s ease;
+    font-size: 1.2vmax;
+}
+.sucess-stories button:hover{
+    box-shadow: 4px 4px 15px #ddca24;
+    transform: scale(1.16);
+}
+
+.sucess-stories a{
+    text-decoration: none;
+    color: #212121;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+ /*Responsivness for trainer info*/
+@media only screen and (max-width: 500px) {
+
+    .trainer-cards{
+        flex-direction: column;
+        width: 90%;
+        
+    }
+    .card{
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        width: 100%;
+        margin-bottom: 3vh;
+    }
+    .t-img img{
+        height: 15vmax;
+        width: 15vmax;
+    }
+    .tinfo{
+        width: 90%;
+
+    }
+    
+}
+
+
+.price-bg{
+    background-color: #212121;
+    width: 97%;
+    margin: 5vh auto;
+    margin-bottom: 0;
+    border-radius: 10px; 
+    padding: 2rem;
+}
+.price-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-head img{
+    height:  4vmax;
+
+}
+.price-head h2{
+    font-family: "Roboto", sans-serif;
+    color: #ddca24;
+    text-decoration: underline;
+    font-size: 4vmax;
+    font-weight: 600;
+}
+.price-cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 4rem auto;
+    padding: 1rem;
+
+}
+.plan-card {
+    height: auto;
+    width: 25%;
+    background-color: white;
+    padding: 0.3rem;
+    padding-left: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 9px;
+    line-height: 1.2;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2vmax;
+}
+.plan-card p{
+    margin-bottom: 2px;
+}
+.card1 img{
+    height: 15vmax;
+}
+
+.card2 img{
+    height: 13vmax;
+    width: 16vmax;
+}
+
+.card3 img{
+    height: 11vmax;
+    width: 13vmax;
+}
+/*responsiveness for prices*/
+@media only screen and (max-width: 600px) {
+
+    .price-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .plan-card{
+        width: 90%;
+        margin-top: 8vh;
+        flex-direction: row;
+        
+    }
+    .price-head h2{
+        font-size: 3vmax;
+    }
+
+}    
+
+
+.contact-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.contact-head img{
+    height: 4vmax;
+
+}
+.contact-head h2{
+    font-family: "Roboto", sans-serif;
+    color: #ddca24;
+    text-decoration: underline;
+    font-size: 4vmax;
+    font-weight: 600;
+}
+
+.contact-form{
+    display: flex;
+    justify-content: space-around;
+    padding: 3vmax;
+}
+.contact-details{
+    width: 50%;
+}
+.user-info{
+    display: flex;
+    flex-direction: column;
+   background-color: white;
+   font-family: "Poppins", sans-serif;
+   font-size: 1.2vmax;
+   width: 80%;
+   border-radius: 10px;
+   padding: 15px;
+   height: 50%;
+}
+.user-info input[type="text"]{
+    border-radius: 6px;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: #ddca24;
+}
+.user-info input[type="number"]{
+    border-radius: 6px;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: #ddca24;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.user-info button{
+    margin-top: 10px;
+    border-radius: 6px;
+}
+.user-info button:hover{
+    background-color: #212121;
+    color: white;
+    box-shadow: 2px 2px 8px black;
+}
+.megagym-info{
+    background-color: white;
+    height: 50%;
+    width: 80%;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1.2vmax;
+    font-family: "Poppins", sans-serif;
+    line-height: 1;
+}
+
+.map{
+   width: 50%;
+}
+iframe{
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px white;
+} 
+#thankYouMessage{
+    background-color: #ddca24;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 8px;
+    margin-top: -20px;
+    margin-left: 20px;
+}
+
+/*Responsivness for contact form*/
+@media only screen and (max-width: 550px) {
+    .contact-form{
+        flex-direction: column;
+    }
+    .contact-details{
+        width: 100%;
+    }
+    .map{
+        margin-top: 1rem;
+        width: 100%;
+    }
+    iframe{
+        height: 30vh;
+    }
+    
+}    
+
+
+.footer-bg{
+    background-color: white;
+    margin: 12px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.dev-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    line-height: 1;
+}
+.dev-details img{
+    height: 7vmax;
+}
+.dev-info{
+    display: flex;
+    font-weight: 600;
+    font-size: 1.2vmax;
+}
+.dev-info img{
+    border-radius: 50%;
+    height: 7vmax;
+    margin-left: 3vmax;
+}
+.rights{
+   text-align: center;
+   font-weight: 600;
+   font-size: 1.2vw;
+}
+@media only screen and (max-width: 550px){
+    .dev-info{
+        font-size: 0.9vmax;
+        padding: 0.5rem;
+        line-height: 1.5;
+    }
+    .dev-info p{
+        margin: 0;
+    }
+    .dev-details img{
+        height: 5vmax;
+        margin-bottom: 8px;
+    }
+    .rights{
+        font-size: 1vmax;
+    }
+}
+
+
+
+
+
+
+
+
+.blog-header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.transformations {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.transformation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.transformation .images {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+.transformation .images img {
+    width: 45%;
+    height: 25vmax;
+    border-radius: 10px;
+}
+
+.transformation .testimonial {
+    flex: 2;
+    padding: 20px;
+}
+
+.transformation .testimonial h2 {
+    margin-bottom: 15px;
+    color: rgb(62, 206, 26);
+}
+
+.transformation .testimonial p {
+    font-size: 1.2vmax;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+}
+
+.transformation .testimonial p strong {
+    color: rgb(62, 206, 26);
+}
+
+@media screen and (max-width: 638px) {
+    .transformation {
+        flex-direction: column;
+    }
+
+    .transformation .images img {
+        width: 100%;
+        margin-bottom: 15px;
+        margin-left: 15px;
+    }
+}
