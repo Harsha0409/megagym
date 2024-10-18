@@ -405,7 +405,10 @@ body::-webkit-scrollbar {
 
 }    
 
+#contact{
+    height: 70vh;
 
+}
 .contact-head{
     display: flex;
     justify-content: space-between;
@@ -427,77 +430,30 @@ body::-webkit-scrollbar {
 
 .contact-form{
     display: flex;
-    justify-content: space-around;
-    padding: 3vmax;
-}
-.contact-details{
-    width: 50%;
-}
-.user-info{
-    display: flex;
-    flex-direction: column;
-   background-color: white;
-   font-family: "Poppins", sans-serif;
-   font-size: 1.2vmax;
-   width: 80%;
-   border-radius: 10px;
-   padding: 15px;
-   height: 50%;
-}
-.user-info input[type="text"]{
-    border-radius: 6px;
-    padding: 5px;
-    border: 1px solid black;
-    background-color: #ddca24;
-}
-.user-info input[type="number"]{
-    border-radius: 6px;
-    padding: 5px;
-    border: 1px solid black;
-    background-color: #ddca24;
-}
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
+    justify-content: space-between;
+    padding: 8vh;
+    height: 60vh;
 
-.user-info button{
-    margin-top: 10px;
-    border-radius: 6px;
-}
-.user-info button:hover{
-    background-color: #212121;
-    color: white;
-    box-shadow: 2px 2px 8px black;
 }
 .megagym-info{
     background-color: white;
-    height: 50%;
-    width: 80%;
+    width: 45%;
     border-radius: 10px;
     margin-top: 10px;
-    padding: 10px;
+    padding: 5vh;
     font-size: 1.2vmax;
     font-family: "Poppins", sans-serif;
-    line-height: 1;
+    line-height: 1.5;
 }
 
 .map{
-   width: 50%;
+   width: 45%;
 }
 iframe{
     border-radius: 10px;
     box-shadow: 3px 3px 8px white;
 } 
-#thankYouMessage{
-    background-color: #ddca24;
-    border-radius: 10px;
-    width: fit-content;
-    padding: 8px;
-    margin-top: -20px;
-    margin-left: 20px;
-}
+
 
 /*Responsivness for contact form*/
 @media only screen and (max-width: 550px) {
@@ -517,6 +473,9 @@ iframe{
     
 }    
 
+footer{
+    margin-top: 10vh;
+}
 
 .footer-bg{
     background-color: white;
@@ -567,13 +526,6 @@ iframe{
         font-size: 1vmax;
     }
 }
-
-
-
-
-
-
-
 
 .blog-header {
     text-align: center;
@@ -641,4 +593,71 @@ iframe{
         margin-bottom: 15px;
         margin-left: 15px;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Gallery Section */
+.gallery-section {
+    background-color: #212121;
+    padding: 3vmax 2vmax;
+    color: white;
+}
+
+.gallery-header {
+    text-align: center;
+    margin-bottom: 2vmax;
+}
+
+.gallery-header h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 3vmax;
+    color: #ddca24;
+    margin-bottom: 0.5vmax;
+}
+
+.gallery-header p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5vmax;
+    line-height: 1.5;
+}
+
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Auto-responsive columns */
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
 }
