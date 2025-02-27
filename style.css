@@ -405,10 +405,7 @@ body::-webkit-scrollbar {
 
 }    
 
-#contact{
-    height: 70vh;
 
-}
 .contact-head{
     display: flex;
     justify-content: space-between;
@@ -463,6 +460,9 @@ iframe{
     .contact-details{
         width: 100%;
     }
+    .megagym-info{
+    width: 100%;
+}
     .map{
         margin-top: 1rem;
         width: 100%;
