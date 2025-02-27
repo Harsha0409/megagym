@@ -458,8 +458,8 @@ iframe{
 
 /*Responsivness for contact form*/
 @media only screen and (max-width: 550px) {
-    #contact{
-        flex-direction: column;
+    .contact-form {
+       flex-direction: column;
     }
     .contact-details{
         width: 100%;
