@@ -510,6 +510,9 @@ footer{
    font-size: 1.2vw;
 }
 @media only screen and (max-width: 550px){
+    footer{
+    margin-top: 30vh;
+}
     .dev-info{
         font-size: 0.9vmax;
         padding: 0.5rem;
