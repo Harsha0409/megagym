@@ -664,3 +664,36 @@ footer{
 .gallery-item img:hover {
     transform: scale(1.05);
 }
+
+/* Image Scroller */
+.image-scroller {
+    background-color: black;
+    overflow: hidden;
+    padding: 2rem 0;
+    cursor: pointer;
+}
+
+.scroller-track {
+    display: flex;
+    width: fit-content;
+    animation: scroll 20s linear infinite;
+}
+
+.image-scroller:hover .scroller-track {
+    animation-play-state: paused;
+}
+
+.scroller-track img {
+    height: 400px;
+    margin: 0 1rem;
+    border-radius: 10px;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
